@@ -62,7 +62,7 @@ step to allow the mamba activate and mamba deactivate commands to properly modif
 mamba shell init --shell bash --root-prefix=~/.local/share/mamba
 ```
 
-The following has to be added in your "/Users//.bash_profile" file
+The following has to be added in your "/Users/.bash_profile" file
 
 ```
 # >>> mamba initialize >>>
@@ -85,4 +85,4 @@ This command adds the necessary code to your ~/.bashrc (or relevant shell config
 
 After running the "init" command above, restart your terminal (or run source ~/.bashrc).
 
-create environments after adding that to bashrc
+Create environments after adding that to bashrc
