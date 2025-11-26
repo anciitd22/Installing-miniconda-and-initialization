@@ -67,8 +67,8 @@ The following has to be added in your "/Users//.bash_profile" file
 ```
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba shell init' !!
-export MAMBA_EXE='/Users/alakh/Desktop/miniconda3/bin/mamba';
-export MAMBA_ROOT_PREFIX='/Users/alakh/.local/share/mamba';
+export MAMBA_EXE='/Users/Desktop/miniconda3/bin/mamba';
+export MAMBA_ROOT_PREFIX='/Users/.local/share/mamba';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
@@ -78,7 +78,7 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 ```
-
+## Note : Check your directories carefully  
 This command adds the necessary code to your ~/.bashrc (or relevant shell config).
 
 
