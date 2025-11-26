@@ -86,3 +86,12 @@ This command adds the necessary code to your ~/.bashrc (or relevant shell config
 After running the "init" command above, restart your terminal (or run source ~/.bashrc).
 
 Create environments after adding that to bashrc
+
+
+## Tell mamba to use the conda-forge channel explicitly:
+
+```
+mamba install -c conda-forge doxygen graphviz
+```
+
+This command directs mamba to search for those packages in conda-forge, where they are always available and up to date.
