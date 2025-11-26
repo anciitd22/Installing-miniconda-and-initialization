@@ -53,4 +53,14 @@ Installing any package: (Use mamba install for fast package installs)
 mamba install <package-name>
 ```
 
+## Mamba (and new versions of conda) require a special “shell initialization” 
+step to allow the mamba activate and mamba deactivate commands to properly modify your shell’s environment. Without this, mamba activate can't set environment variables in your current session—it can only do so in subprocesses.
 
+### To automatically enable this in every new terminal session, run:
+
+```
+mamba shell init --shell bash --root-prefix=~/.local/share/mamba
+```
+This command adds the necessary code to your ~/.bashrc (or relevant shell config).
+
+After running the "init" command above, restart your terminal (or run source ~/.bashrc).
