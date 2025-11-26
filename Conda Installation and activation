@@ -1,0 +1,24 @@
+# Installing miniconda 
+
+Download miniconda package and install it 
+Check the minicona path: /Users/Desktop/miniconda3  (Use yours)
+
+Permanently add Miniconda to PATH:
+
+Add this line to your shell configuration file (so it works every time you open a new terminal):
+
+For bash users, edit ~/.bashrc (or ~/.bash_profile on macOS Terminal).
+
+For zsh users, edit ~/.zshrc.
+
+Add this line at the end: export PATH="/Users/alakh/Desktop/miniconda3/bin:$PATH"
+
+use terminal: source ~/.bashrc (or zshrc)
+check: conda --version
+
+Use conda now
+
+conda create -n marbl-env python=3.11
+conda activate marbl-env
+conda install doxygen graphviz
+conda install mamba -c conda-forge
