@@ -33,3 +33,24 @@ conda create -n env1 python=3.11
 conda activate env1
 conda install mamba -c conda-forge
 ```
+
+You can also use mamba for all normal environment management tasks, such as:
+
+Creating environments:
+```
+mamba create -n myenv python=3.11
+```
+
+Activating environments: (The activate command still uses conda, that's normal!)
+
+```
+conda activate myenv
+```
+
+Installing any package: (Use mamba install for fast package installs)
+
+```
+mamba install <package-name>
+```
+
+
